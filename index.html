@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <h1> Cálculo de Salario Semanal </h1>
+    <main>
+        <h1>Calcula tu sueldo</h1>
+        <article id="content">
+            <section>
+                <p>¿Cuantas horas has trabajado en nuestra empresa?</p>
+                <input type="number" id="user-input" />
+                <button id="calculate">Calcular</button>
 
-    <label>
-        <input type="number" id="cantidadHora" name="Salario">
-    </label>
-    
-    <button type="button" onclick="myFunction()">
-        Calcular
-    </button>
+                <p>Total<span id="finalPrice"></span></p>
 
+            </section>
+        </article>
+    </main>
     <script src="main.js"></script>
 </body>
 
