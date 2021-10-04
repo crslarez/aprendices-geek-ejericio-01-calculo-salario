@@ -10,10 +10,11 @@ const finalPriceContainer = document.getElementById('finalPrice');
 bnt.addEventListener("click", function() {
     let totalHrs = Number(input.value.trim());
     if(totalHrs <= 40){
-        
-        console.log("cada hora de trabajo equivale a" + sueldoMin )
+        totalMin = totalHrs * sueldoMin
+        console.log("Tu sueldo equivale a " + totalMin )
     }else{
-        console.log("cada hora de trabajo equivale a" + sueldoMax)
+        totalMax = totalHrs * sueldoMax
+        console.log("Tu sueldo equivale a " + totalMax)
     }
     
 }
