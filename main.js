@@ -15,4 +15,6 @@ bnt.addEventListener("click", function() {
     }else{
         console.log("cada hora de trabajo equivale a" + sueldoMax)
     }
-});
+    
+}
+);
