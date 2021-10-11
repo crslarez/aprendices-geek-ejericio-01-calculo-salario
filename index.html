@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Ejercicio de Cálculo de Sueldo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calcular Sueldo</title>
 </head>
 <body>
-    <main>
-        <h1>Carcula tu sueldo</h1>
-        <article id="content">
-            <section>
-                <p>¿Cuantas horas has trabajado en nuestra empresa?</p>
-                <input type="number" id="user-input" />
-                <button id="calculate">Calcular</button>
-
-                <p>Su total a cobrar es de:<span id="finalPrice"></span></p>
-
-            </section>
-        </article>
-    </main>
-    <script src="main.js"></script>
+  <main id="box">
+    <h1 id="title">Calcula tu sueldo</h1>
+    <hr>
+    <article id="content">
+      <section>
+        <p>¿Cuantas horas has trabajado en nuestra empresa?</p>
+        <input type="number" id="user-input" />
+        <button id="calculate">Calcular</button>
+        <p>Cada hora de trabajo equivale a: <span id="value_hrs"></span></p>
+        <p>Su total a cobrar es de: <span id="sueldo"></span></p>
+      </section>
+    </article>
+  </main>
+  <script src="main.js"></script>
 </body>
-
 </html>

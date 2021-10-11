@@ -1,18 +1,23 @@
-const sueldoMin= 16000;
-const sueldoMax= 20000;
+const sueldoMin = 16000;
+const sueldoMax = 20000;
+const HrsRef = 40;
+let totalHrs;
 
 const input = document.getElementById("user-input");
 const bnt = document.getElementById("calculate");
-const finalPriceContainer = document.getElementById('finalPrice');
+const value_hrs = document.getElementById("value_hrs");
+const sueldoTotal = document.getElementById("sueldo");
 
-let finalPrice = bnt.addEventListener("click", function() {
-    let totalHrs = Number(input.value.trim());
-    if(totalHrs <= 40){
-        
-      document.write('Tu sueldo total es: ' + totalHrs * sueldoMin)
-        //console.log("cada hora de trabajo equivale a" + sueldoMin)
-    }else{
-      document.write('Tu sueldo total es: ' + totalHrs * sueldoMax)
-        //console.log("cada hora de trabajo equivale a" + sueldoMax)
-    }
+bnt.addEventListener("click", function () {
+  totalHrs = Number(input.value.trim());
+  
+  if (totalHrs <= HrsRef) {
+    let honorarios = totalHrs * sueldoMin;
+    value_hrs.innerText = sueldoMin;
+    sueldoTotal.innerText = honorarios;
+  } else {
+    let honorarios = totalHrs * sueldoMax;
+    value_hrs.innerText = sueldoMax;
+    sueldoTotal.innerText = honorarios;
+  }
 });
